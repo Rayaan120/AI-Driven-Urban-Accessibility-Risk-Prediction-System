@@ -2,33 +2,73 @@ export const blogPosts = [
     {
         id: 3,
         week: 3,
-        title: "The Polish & The Portfolio",
+        title: "Literature Review, Research Gap, Research Questions, and Reflections",
         date: "Feb 18, 2026",
-        excerpt: "Finalizing the UI interactions and setting up the structure for the final presentation. Why details matter more than you think.",
+        excerpt: "Understanding existing research frameworks, identifying gaps, and framing questions for the AURaMP predictive accessibility model.",
         content: `
-            <p>As we approach the final submission, the focus shifts from core functionality to user experience and those subtle details that make a project stand out.</p>
-            
-            <h4 class="text-xl font-bold text-white mt-6 mb-3">Refining Interactions</h4>
-            <p>I spent a significant amount of time this week working on the glassmorphism effects and ensuring the navigation transitions felt liquid and responsive. Framer Motion has been a game-changer for these micro-interactions.</p>
-            
-            <h4 class="text-xl font-bold text-white mt-6 mb-3">Content Strategy</h4>
-            <p>Structuring the content for this portfolio was a challenge. I wanted it to feel like a living document, not just a static archive. Adding this functional blog system allows me to treat it as a proper dev log.</p>
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Literature Review</h4>
+            <p>This week, I focused on understanding the existing research and frameworks related to urban accessibility, inclusive design, and smart city analytics. Accessibility in urban planning is typically guided by established standards such as universal design principles and government accessibility guidelines. These standards define requirements for features such as minimum sidewalk width, slope limits, curb ramp design, surface quality, and pedestrian lighting.</p>
+            <p>Many existing studies evaluate accessibility through audits, surveys, or GIS-based spatial analysis. Geographic Information Systems (GIS) are commonly used to map infrastructure conditions and visualize accessibility levels. However, most systems rely on static mapping or manual evaluation rather than predictive modeling.</p>
+            <p>In recent years, machine learning has been widely applied in urban analytics, including traffic prediction, infrastructure monitoring, and smart mobility systems. However, its application specifically for predicting accessibility risk at a micro (street/block) level appears limited. Most research focuses either on high-level policy analysis or purely technical infrastructure assessment without integrating predictive risk modeling.</p>
+            <p>From reviewing this literature, it became clear that while accessibility standards exist and spatial mapping tools are available, there is limited work that combines rule-based compliance assessment with machine learning-based risk prediction in a single, interactive system.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Research Gap</h4>
+            <p>Based on the literature reviewed, the following research gaps were identified:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
+                <li>Accessibility evaluation is often reactive and manual rather than proactive and predictive.</li>
+                <li>Existing GIS-based tools primarily visualize infrastructure conditions but do not forecast risk levels.</li>
+                <li>There is limited integration of accessibility standards with machine learning techniques for risk scoring.</li>
+                <li>Few systems provide an interactive decision-support tool that combines interpretability (rule-based checks) with predictive modeling (ML-based classification).</li>
+            </ul>
+            <p class="mt-4">This project aims to address these gaps by developing a hybrid system that integrates accessibility guidelines with supervised machine learning to generate risk-based insights at a street or block level.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Research Questions</h4>
+            <p>To guide the development and evaluation of the project, the following research questions have been formulated:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
+                <li>How can urban infrastructure features be transformed into measurable indicators of accessibility risk?</li>
+                <li>Can supervised machine learning models effectively predict accessibility risk levels based on infrastructure attributes?</li>
+                <li>How does a hybrid approach (rule-based + ML-based) improve interpretability and reliability in accessibility assessment?</li>
+                <li>Can a map-based visualization system enhance the usability and decision-making potential of accessibility risk data?</li>
+            </ul>
+            <p class="mt-4">These questions will shape both the technical implementation and the evaluation of the system in the coming weeks.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Reflection</h4>
+            <p>Working on the literature review helped me understand that accessibility is not just a technical problem but also a policy and social issue. It reinforced the importance of designing the system in a way that remains transparent and interpretable rather than purely algorithmic.</p>
+            <p>Identifying the research gap was particularly important, as it clarified what differentiates this project from existing studies. The integration of predictive modeling with rule-based standards appears to be the most innovative aspect of the system.</p>
+            <p>This week has strengthened the research foundation of the project and ensured that the development phase is grounded in existing knowledge while contributing something new. It has also made me more confident about the academic relevance of the project.</p>
         `
     },
     {
         id: 2,
         week: 2,
-        title: "Architecture & State Management",
+        title: "Project Topic, Aim, and Objectives",
         date: "Feb 11, 2026",
-        excerpt: "Deep dive into React context, prop drilling vs. global state, and deciding on the folder structure for scalability.",
+        excerpt: "Refining the final-year project topic: AURaMP - AI-Driven Urban Accessibility Risk Mapping & Prediction System.",
         content: `
-            <p>This week was all about making the hard decisions that will affect the maintainability of the codebase moving forward.</p>
-            
-            <h4 class="text-xl font-bold text-white mt-6 mb-3">Component Composition</h4>
-            <p>I decided to adopt a feature-based folder structure (sections/components) rather than a type-based one. This keeps related styles and logic closer together, making it easier to refactor later.</p>
-            
-            <h4 class="text-xl font-bold text-white mt-6 mb-3">Performance Wins</h4>
-            <p>By using React.memo and keeping state as local as possible, we've managed to keep re-renders to a minimum, even with the complex background animations running.</p>
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Topic</h4>
+            <p>This week, I worked on clearly defining and refining my final-year project topic. The project is titled “AURaMP – AI-Driven Urban Accessibility Risk Mapping & Prediction System.” The focus of this project is to develop a smart, data-driven system that can analyze urban infrastructure and predict accessibility risks at a street or block level.</p>
+            <p>The idea is to study common urban features such as sidewalk width, slope, curb ramps, lighting conditions, surface quality, and traffic levels, and use them to estimate how accessible a particular area is. Instead of looking at accessibility as a simple yes-or-no condition, the system will classify areas into different risk levels (low, medium, or high). This makes the results more practical and useful for prioritizing improvements.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Aim of the Project</h4>
+            <p>The main aim of this project is to build an intelligent system that can evaluate urban areas and predict accessibility risk using machine learning techniques.</p>
+            <p>I want the system to move beyond reactive reporting, where issues are addressed only after complaints are made. Instead, the goal is to proactively highlight areas that are likely to pose challenges for elderly individuals and people with disabilities.</p>
+            <p>Ultimately, the system is intended to act as a decision-support tool that can assist planners, researchers, or policymakers in identifying which areas require urgent accessibility improvements.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Objectives of the Project</h4>
+            <p>To achieve this aim, I have defined the following objectives:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
+                <li>Identify and select key urban features that influence accessibility, such as sidewalk width, slope, curb ramps, lighting, and surface conditions.</li>
+                <li>Create a structured dataset representing street segments or blocks with these accessibility-related attributes.</li>
+                <li>Develop a rule-based accessibility scoring mechanism aligned with established accessibility guidelines, ensuring transparency and interpretability.</li>
+                <li>Implement a supervised machine learning model that can predict accessibility risk levels based on infrastructure data.</li>
+                <li>Build a web-based interactive map interface to visualize the predicted risk levels in a clear and intuitive manner.</li>
+                <li>Evaluate the performance of the model and analyze how accurately it predicts accessibility risk.</li>
+                <li>Explore how such a system can contribute to smarter, more inclusive urban planning.</li>
+            </ul>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Reflection</h4>
+            <p>This week helped me bring more structure and clarity to the project. While the core idea was already defined earlier, formally writing down the aim and objectives made the scope more concrete and manageable. It also helped me think practically about how each component—data collection, risk modeling, and visualization—fits together.</p>
+            <p>Defining these objectives gives me a clear roadmap for the upcoming development phase, and it has made the project feel more focused and achievable.</p>
         `
     },
     {
