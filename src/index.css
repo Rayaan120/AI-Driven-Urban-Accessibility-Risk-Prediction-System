@@ -6,6 +6,7 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-background text-gray-100 font-sans antialiased;
   }
@@ -15,7 +16,21 @@
   .glass {
     @apply backdrop-blur-md bg-white/5 border border-white/10;
   }
+
   .glass-card {
     @apply backdrop-blur-xl bg-card border border-white/5 hover:bg-card-hover transition-colors duration-300;
   }
+}
+
+/* Blog Content Styling */
+.prose img {
+  @apply rounded-xl border border-white/10 shadow-2xl;
+}
+
+.prose h4 {
+  @apply text-white font-display tracking-tight;
+}
+
+.prose p {
+  @apply mb-6 leading-relaxed text-gray-300;
 }

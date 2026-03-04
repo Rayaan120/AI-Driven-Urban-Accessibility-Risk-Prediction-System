@@ -4,7 +4,7 @@ import { CheckCircle2, Circle } from 'lucide-react';
 const meetings = [
     {
         id: 1,
-        date: 'Feb 05, 2026',
+        date: 'Jan 22, 2026',
         supervisor: 'Mr. Roshan Renji',
         agenda: 'Initial Project Discussion',
         summary: 'Presented proposed project idea: Smart Urban Accessibility Risk Mapping System using machine learning. Discussed scope, feasibility, and measurable features (sidewalk width, slope, curb ramps, lighting).',
@@ -17,7 +17,7 @@ const meetings = [
     },
     {
         id: 2,
-        date: 'Feb 12, 2026',
+        date: 'Jan 29, 2026',
         supervisor: 'Dr. Roshan Renji',
         agenda: 'Refined Topic & Architecture Discussion',
         summary: 'Presented the refined project topic, aim, and objectives. Explained the hybrid approach combining rule-based scoring with ML risk prediction. Discussed potential architecture (backend processing, frontend map UI). Supervisor advised justifying the use of ML and defining evaluation criteria.',
@@ -30,7 +30,7 @@ const meetings = [
     },
     {
         id: 3,
-        date: 'Feb 19, 2026',
+        date: 'Feb 05, 2026',
         supervisor: 'Dr. Roshan Renji',
         agenda: 'Literature Review & Research Gaps',
         summary: 'Presented literature review findings, research gaps, and proposed research questions. Emphasized integration of predictive modeling with rule-based standards over static GIS/manual audits. Discussed validation strategies and demonstratable impact.',
@@ -38,6 +38,34 @@ const meetings = [
             'Begin model prototyping.',
             'Implement baseline rule-based scoring.',
             'Continue system architecture development.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 4,
+        date: 'Feb 12, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Project Planning, Methodology & Prototyping',
+        summary: 'Presented project planning including WBS and Gantt chart. Selected Agile methodology for its iterative flexibility. Discussed initial prototype development focusing on core functionality. Supervisor recommended prioritizing integration of ML model, API, and map UI.',
+        actionItems: [
+            'Continue developing the system prototype.',
+            'Integrate the machine learning model with the backend.',
+            'Improve the map visualization interface.',
+            'Conduct initial testing of the prototype.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 5,
+        date: 'Feb 19, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Methodology Analysis & Prototype Refinement',
+        summary: 'Presented analysis of software methodologies (Waterfall, Agile, Scrum, Spiral) and confirmed the selection of Agile. Discussed the stable MVP development process for AURaMP. Supervisor suggested focusing on module testing and documented refinement.',
+        actionItems: [
+            'Continue development of the system prototype.',
+            'Improve integration between machine learning model and backend API.',
+            'Refine the interactive map visualization.',
+            'Conduct functional testing of the prototype.'
         ],
         status: 'Completed'
     }

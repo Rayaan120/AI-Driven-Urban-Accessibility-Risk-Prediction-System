@@ -1,11 +1,152 @@
 export const blogPosts = [
     {
+        id: 5,
+        week: 5,
+        title: "Software Methodology and Prototype Development",
+        date: "Feb 20, 2026",
+        excerpt: "Analyzing development frameworks and building the initial functional prototype for the AURaMP system.",
+        content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week5-project.jpg" 
+                    alt="Software Methodology and Prototype" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Software Methodology Selection</h4>
+            <p>This week, I analyzed different software development methodologies to determine which approach would be most suitable for the AURaMP project. The methodologies reviewed included the Waterfall model, Agile methodology, Scrum framework, and Spiral model.</p>
+            <p>The Waterfall model follows a linear development process where each stage is completed before moving to the next. While it provides clear documentation, it lacks flexibility when changes are required during development. The Spiral model focuses heavily on risk management and iterative development, but it is generally more complex and suited for large-scale systems.</p>
+            <p>Agile and Scrum emphasize iterative development, allowing features to be built, tested, and improved continuously. This approach is particularly useful for projects where requirements evolve during development.</p>
+            <p>After comparing these approaches, Agile methodology was selected for the AURaMP project. Agile allows the system to be developed incrementally, enabling continuous testing and improvement of different modules such as data processing, machine learning models, and the interactive map interface. This flexibility makes Agile well-suited for a research-oriented development project.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Prototype Development Process</h4>
+            <p>The next step in the project involved planning and developing an initial prototype of the system. The purpose of the prototype was to demonstrate the core functionality of the accessibility risk mapping system before implementing more advanced features.</p>
+            
+            <div class="space-y-6 mt-4">
+                <div>
+                    <h5 class="text-white font-semibold mb-2">Prototype Planning</h5>
+                    <p class="text-gray-300">The system architecture, required software tools, and overall workflow were defined. Technologies such as React for the frontend, FastAPI for the backend, and Python-based machine learning libraries were selected.</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">Prototype Development</h5>
+                    <p class="text-gray-300">A minimum viable prototype was created focusing on the key features of the system. This included developing the risk prediction model, building the backend API, and creating a map-based interface to visualize accessibility risk levels.</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">Testing and Validation</h5>
+                    <p class="text-gray-300">The prototype was tested to ensure that the data processing pipeline, machine learning predictions, and map visualization were functioning correctly.</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">Refinement</h5>
+                    <p class="text-gray-300">Based on testing results, improvements were made to enhance system performance and usability.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Reflection</h4>
+            <p>This week was important for organizing the development strategy of the project. Selecting an appropriate software methodology provided a structured approach for building the system, while the prototyping process helped transform the conceptual idea of the project into an early working version. The initial prototype demonstrates the feasibility of the system and provides a strong foundation for further development and refinement.</p>
+        `
+    },
+    {
+        id: 4,
+        week: 4,
+        title: "Project Planning, Gantt Chart, WBS, Software Methodology, and Research Methodology",
+        date: "Feb 13, 2026",
+        excerpt: "Defining the structural roadmap: Work Breakdown Structure, Gantt charts, and iterative development methodologies for AURaMP.",
+        content: `
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Planning Overview</h4>
+            <p>This week focused on planning the structure and timeline of the project in order to ensure systematic development and timely completion. While the project idea, objectives, and research background were already defined in previous weeks, it was important to translate these ideas into a clear execution plan. Effective planning helps break down the overall system into manageable components and provides a roadmap for development, experimentation, and evaluation.</p>
+            <p>The project, titled “AURaMP – AI-Driven Urban Accessibility Risk Mapping & Prediction System,” involves several interconnected components including data preparation, machine learning modeling, web application development, and visualization. To organize these tasks efficiently, I developed a Work Breakdown Structure (WBS) and a Gantt chart. These tools help identify the sequence of activities, dependencies between tasks, and expected timelines for each phase of the project.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Work Breakdown Structure (WBS)</h4>
+            <p>The Work Breakdown Structure divides the project into smaller, manageable tasks that can be completed in stages. For this project, the major components were organized into the following phases:</p>
+            <div class="space-y-6 mt-4">
+                <div>
+                    <h5 class="text-white font-semibold mb-2">1. Research and Problem Definition</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Identify urban accessibility challenges.</li>
+                        <li>Study accessibility standards and universal design principles.</li>
+                        <li>Review existing research related to GIS-based accessibility analysis and machine learning applications in urban planning.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">2. Data Preparation</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Identify key accessibility-related features such as sidewalk width, slope, curb ramps, lighting, and surface condition.</li>
+                        <li>Create or collect a structured dataset representing street segments or blocks.</li>
+                        <li>Clean and preprocess the dataset to ensure consistency.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">3. Risk Modeling</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Develop a rule-based accessibility scoring system aligned with accessibility guidelines.</li>
+                        <li>Train and evaluate a supervised machine learning model to classify accessibility risk levels.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">4. System Development</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Build the backend infrastructure using a web framework.</li>
+                        <li>Implement the machine learning prediction pipeline.</li>
+                        <li>Develop the frontend interface with an interactive map to visualize accessibility risk levels.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">5. Testing and Evaluation</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Validate the predictions generated by the model.</li>
+                        <li>Evaluate system usability and visualization effectiveness.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">6. Documentation and Reporting</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Prepare the final report and technical documentation.</li>
+                        <li>Compile results, analysis, and reflections.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Gantt Chart (Project Timeline)</h4>
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week4-project.jpg" 
+                    alt="Project Gantt Chart" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Software Development Methodology</h4>
+            <p>For the software development process, an iterative development approach is being adopted. Rather than building the entire system in a single step, the project is divided into smaller functional modules that can be developed and tested incrementally.</p>
+            <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
+                <li><strong>Requirement identification</strong> – defining system features and data inputs.</li>
+                <li><strong>Design and architecture planning</strong> – determining how the backend, machine learning model, and frontend interface will interact.</li>
+                <li><strong>Implementation</strong> – developing the machine learning model and building the interactive mapping interface.</li>
+                <li><strong>Testing and refinement</strong> – evaluating system functionality and improving model performance.</li>
+            </ul>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Research Methodology</h4>
+            <p>The research methodology for this project follows a data-driven experimental approach. The process begins with identifying relevant infrastructure features that influence accessibility. These features are converted into measurable variables that can be analyzed computationally. A rule-based accessibility scoring method is first developed based on accessibility guidelines to ensure interpretability.</p>
+            <p>After establishing the rule-based system, a supervised machine learning model is trained using the dataset to classify accessibility risk levels. The model's predictions are then visualized through a map-based interface, enabling spatial analysis of accessibility risks.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Reflection</h4>
+            <p>This week’s planning activities helped establish a clear roadmap for the project. Developing the Work Breakdown Structure and Gantt chart made it easier to visualize how different components of the system will be developed and integrated over time. It also highlighted the importance of allocating time not only for development but also for testing, evaluation, and documentation.</p>
+        `
+    },
+    {
         id: 3,
         week: 3,
         title: "Literature Review, Research Gap, Research Questions, and Reflections",
-        date: "Feb 18, 2026",
+        date: "Feb 06, 2026",
         excerpt: "Understanding existing research frameworks, identifying gaps, and framing questions for the AURaMP predictive accessibility model.",
         content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week3-project.jpg" 
+                    alt="Literature Review and Research Gap" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Literature Review</h4>
             <p>This week, I focused on understanding the existing research and frameworks related to urban accessibility, inclusive design, and smart city analytics. Accessibility in urban planning is typically guided by established standards such as universal design principles and government accessibility guidelines. These standards define requirements for features such as minimum sidewalk width, slope limits, curb ramp design, surface quality, and pedestrian lighting.</p>
             <p>Many existing studies evaluate accessibility through audits, surveys, or GIS-based spatial analysis. Geographic Information Systems (GIS) are commonly used to map infrastructure conditions and visualize accessibility levels. However, most systems rely on static mapping or manual evaluation rather than predictive modeling.</p>
@@ -42,9 +183,16 @@ export const blogPosts = [
         id: 2,
         week: 2,
         title: "Project Topic, Aim, and Objectives",
-        date: "Feb 11, 2026",
+        date: "Jan 30, 2026",
         excerpt: "Refining the final-year project topic: AURaMP - AI-Driven Urban Accessibility Risk Mapping & Prediction System.",
         content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week2-project.jpg" 
+                    alt="AURaMP Project Objectives" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Topic</h4>
             <p>This week, I worked on clearly defining and refining my final-year project topic. The project is titled “AURaMP – AI-Driven Urban Accessibility Risk Mapping & Prediction System.” The focus of this project is to develop a smart, data-driven system that can analyze urban infrastructure and predict accessibility risks at a street or block level.</p>
             <p>The idea is to study common urban features such as sidewalk width, slope, curb ramps, lighting conditions, surface quality, and traffic levels, and use them to estimate how accessible a particular area is. Instead of looking at accessibility as a simple yes-or-no condition, the system will classify areas into different risk levels (low, medium, or high). This makes the results more practical and useful for prioritizing improvements.</p>
@@ -75,14 +223,22 @@ export const blogPosts = [
         id: 1,
         week: 1,
         title: "Project Overview and Initial Thoughts",
-        date: "Feb 04, 2026",
+        date: "Jan 23, 2026",
         excerpt: "Introduction to Smart Urban Accessibility Risk Mapping System: Using ML to predict accessibility risks for inclusive urban planning.",
         content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week1-project.jpg" 
+                    alt="Smart Urban Accessibility Mapping" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Idea</h4>
             <p>For my final-year project, I have chosen to work on a Smart Urban Accessibility Risk Mapping System. The core idea of this project is to use data and machine learning techniques to identify and predict accessibility risks in urban areas at a street or block level. The system focuses on challenges faced by elderly individuals and people with disabilities, such as narrow or damaged sidewalks, missing curb ramps, steep slopes, unsafe crossings, and poor lighting. Instead of assessing accessibility only after issues are reported, this project aims to proactively highlight high-risk areas using a data-driven approach.</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Rationale for Choosing This Project</h4>
             <p>I chose this project because urban accessibility is a real-world, socially relevant problem, especially in a rapidly urbanizing country like India. While accessibility guidelines and policies exist, their implementation and monitoring are often manual, time-consuming, and reactive. Many people face accessibility barriers daily, but these issues are not always visible in planning processes until complaints arise. As a computer engineering student, I wanted to apply technical skills such as data analysis, machine learning, and software design to address a problem that has meaningful social impact. This project allows me to combine technology with inclusive design and contribute to smarter and more equitable urban planning solutions.</p>
+
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Details and Approach</h4>
             <p>The project aims to analyze urban spatial data—such as sidewalk characteristics, road features, slope, traffic levels, and lighting conditions—using open data sources. These features will be processed and used to train a machine learning model that predicts an accessibility risk score for each street or block. The output will be visualized through a map-based interface that highlights low-, medium-, and high-risk areas, making the results easy to interpret and actionable.</p>
