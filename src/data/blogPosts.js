@@ -1,5 +1,391 @@
 export const blogPosts = [
     {
+        id: 11,
+        week: 11,
+        title: "Final Project Outcomes, Reflection, and Preparation",
+        date: "Apr 03, 2026",
+        excerpt: "Reviewing the overall readiness for deployment, identifying future enhancements, and finalizing the report and presentation.",
+        content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week11-project.png" 
+                    alt="Skills and Future Vision" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">2.1 Project Readiness</h4>
+            <p>This final week focused on assessing the readiness of the AURaMP system for real-world implementation. The system is now functionally complete, capable of predicting risk, evaluating compliance, and aiding decision-making through interactive map-based simulation.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-4">Knowledge and Skills Gained</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-sm">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <ul class="space-y-2 text-gray-400">
+                        <li><span class="text-green-400 mr-2">✔</span> Machine learning model implementation & hyperparameter tuning</li>
+                        <li><span class="text-green-400 mr-2">✔</span> Full-stack React development with FastAPI integration</li>
+                    </ul>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <ul class="space-y-2 text-gray-400">
+                        <li><span class="text-green-400 mr-2">✔</span> Data preprocessing & feature engineering</li>
+                        <li><span class="text-green-400 mr-2">✔</span> Interactive GIS-based visualization design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">Limitations and Proposed Improvements</h4>
+            <p>While successful, the project identified areas for growth such as dataset depth and real-time integration. Proposed improvements include using real-world urban authority datasets, integrating live traffic sensor data, and implementing data-driven weighting in the priority engine.</p>
+
+            <div class="bg-blue-500/5 border border-blue-500/20 rounded-xl p-5 mt-4">
+                <h5 class="text-blue-400 font-semibold mb-2">Future Enhancements</h5>
+                <p class="text-sm text-gray-400">Future iterations could involve integration with city-wide GIS platforms, a mobile app for field data collection, and more advanced predictive models for dynamic risk updates.</p>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">Final Deliverables</h4>
+            <p>Significant progress has been made in finalizing the project report and presentation. All chapters—from literature search to evaluation—are drafted, and the presentation slides are polished for an effective delivery of the problem, methodology, and results.</p>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
+            <p>Reviewing the entire journey, I am proud of how the AURaMP system transitioned from a conceptual idea to a working predictive tool. This project not only sharpened my technical abilities but also deepened my understanding of how data science can be applied to create more equitable and accessible urban environments.</p>
+        `
+    },
+    {
+        id: 10,
+        week: 10,
+        title: "Project Progress, Evaluation, and Final Review",
+        date: "Mar 27, 2026",
+        excerpt: "Concluding the AURaMP journey: Summarizing key findings, system performance, and the impact of AI-driven urban accessibility mapping.",
+        content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week10-project.png" 
+                    alt="Final Project Review" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">2.1 Project Progress</h4>
+            <p>This final week focused on testing, integration, and validation of the AURaMP system. All major components—including the frontend interface, backend API, and machine learning model—were tested together to ensure smooth operation. The system successfully generates accessibility risk predictions and displays them through an interactive map interface.</p>
+
+            <h5 class="text-white font-semibold mt-6 mb-3">Project Outputs vs. Objectives</h5>
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-left text-sm text-gray-400 border-collapse">
+                    <thead class="text-white bg-white/5">
+                        <tr>
+                            <th class="p-3 border border-white/10">Objective</th>
+                            <th class="p-3 border border-white/10">Outcome</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="p-3 border border-white/10">Identify key accessibility features</td><td class="p-3 border border-white/10 text-green-400">Successfully implemented</td></tr>
+                        <tr><td class="p-3 border border-white/10">Develop rule-based scoring system</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
+                        <tr><td class="p-3 border border-white/10">Implement ML-based risk prediction</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
+                        <tr><td class="p-3 border border-white/10">Build interactive map interface</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
+                        <tr><td class="p-3 border border-white/10">Enable decision support through prioritisation</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h5 class="text-white font-semibold mt-8 mb-3">Implementation Procedure</h5>
+            <ul class="list-decimal pl-5 space-y-2 text-gray-300">
+                <li>Load dataset containing road segment features</li>
+                <li>Process input data and apply rule-based scoring</li>
+                <li>Generate ML predictions using trained Random Forest model</li>
+                <li>Display results on interactive map</li>
+                <li>Apply priority intervention engine for ranking and simulation</li>
+            </ul>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-4">2.2 Project Review</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="p-5 rounded-xl bg-white/5 border border-white/10">
+                    <h5 class="text-white font-bold mb-2">Design & Architecture</h5>
+                    <p class="text-sm text-gray-400">Adopted a modular approach, separating frontend, backend, and ML. Wireframes ensured a user-friendly interface.</p>
+                </div>
+                <div class="p-5 rounded-xl bg-white/5 border border-white/10">
+                    <h5 class="text-white font-bold mb-2">Evaluation Results</h5>
+                    <p class="text-sm text-gray-400">Testing confirmed consistent outputs and efficient real-time interactions for urban planners.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">2.3 Summary of Key Achievements</h4>
+            <ul class="list-disc pl-5 space-y-2 text-gray-300">
+                <li>Developed a hybrid (rule-based + ML) risk prediction system</li>
+                <li>Built interactive map visualization for accessibility auditing</li>
+                <li>Enabled scenario-based decision analysis and prioritization</li>
+                <li>Proactive identification of high-risk areas for inclusive planning</li>
+            </ul>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
+            <p>This final phase provided a complete understanding of system development. The project addresses the challenge of urban accessibility by providing a proactive, data-driven solution. While limitations like dataset scope exist, the project demonstrates how AI can empower equitable urban planning and provides a strong foundation for future research.</p>
+        `
+    },
+    {
+        id: 9,
+        week: 9,
+        title: "Software Testing: Concepts, Types, and Implementation",
+        date: "Mar 20, 2026",
+        excerpt: "Applying rigorous software testing principles—from unit to integration testing—to ensure the reliability and accuracy of the AURaMP system.",
+        content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week9-project.png" 
+                    alt="Software Testing and QA" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Overview</h4>
+            <p>This week focused on applying software testing principles within the AURaMP system. Testing plays a critical role in ensuring that each part functions correctly and that the overall system behaves as expected, especially given the integration of frontend, backend, and machine learning modules.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-4">1. Introduction to Software Testing</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="p-5 rounded-xl bg-green-500/5 border border-green-500/20">
+                    <h5 class="text-green-400 font-bold mb-2">Verification</h5>
+                    <p class="text-sm text-gray-400">Focuses on whether the system is built correctly according to design specifications. (e.g., Is the ML model implemented as intended?)</p>
+                </div>
+                <div class="p-5 rounded-xl bg-blue-500/5 border border-blue-500/20">
+                    <h5 class="text-blue-400 font-bold mb-2">Validation</h5>
+                    <p class="text-sm text-gray-400">Ensures the system meets user needs and solves the intended problem. (e.g., Does it correctly identify high-risk areas?)</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-4">2. Types of Software Testing</h4>
+            <div class="overflow-x-auto mb-6">
+                <table class="w-full text-left text-sm text-gray-400 border-collapse">
+                    <thead class="text-white bg-white/5">
+                        <tr>
+                            <th class="p-3 border border-white/10">Testing Type</th>
+                            <th class="p-3 border border-white/10">Purpose</th>
+                            <th class="p-3 border border-white/10">Example in AURaMP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-3 border border-white/10 text-white font-medium">Unit Testing</td>
+                            <td class="p-3 border border-white/10">Test individual components</td>
+                            <td class="p-3 border border-white/10">ML prediction function</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border border-white/10 text-white font-medium">Integration Testing</td>
+                            <td class="p-3 border border-white/10">Test interaction between modules</td>
+                            <td class="p-3 border border-white/10">Frontend ↔ Backend API communication</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border border-white/10 text-white font-medium">System Testing</td>
+                            <td class="p-3 border border-white/10">Test complete system functionality</td>
+                            <td class="p-3 border border-white/10">Full map-to-prediction workflow</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 border border-white/10 text-white font-medium">Acceptance Testing</td>
+                            <td class="p-3 border border-white/10">Validate user requirements</td>
+                            <td class="p-3 border border-white/10">Usability for urban planners</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">3. Integration Testing Implementation</h4>
+            <p>Integration testing confirmed that data transmission between the React frontend and FastAPI backend is functioning correctly. Using the scenario simulator, test steps verified that modified attributes trigger successful ML predictions which are then accurately displayed on the map.</p>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 mt-4">
+                <h5 class="text-white font-semibold mb-2">Test Result Summary</h5>
+                <ul class="space-y-2">
+                    <li class="flex items-center text-sm text-gray-400"><span class="text-green-500 mr-2">✔</span> Data transmission is functioning correctly</li>
+                    <li class="flex items-center text-sm text-gray-400"><span class="text-green-500 mr-2">✔</span> ML predictions are triggered successfully</li>
+                    <li class="flex items-center text-sm text-gray-400"><span class="text-green-500 mr-2">✔</span> Results are accurately displayed to the user</li>
+                </ul>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
+            <p>This week reinforced the importance of testing in building reliable systems. Performing integration testing was particularly valuable, as it ensured that the frontend, backend, and machine learning model work seamlessly together. Overall, this phase has greatly improved the robustness of the system.</p>
+        `
+    },
+    {
+        id: 8,
+        week: 8,
+        title: "Implementation Challenges, Technologies, APIs, and Troubleshooting",
+        date: "Mar 13, 2026",
+        excerpt: "Exploring the AURaMP technical stack, API integrations, and systematic troubleshooting of full-stack implementation challenges.",
+        content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week8-project.png" 
+                    alt="Implementation and Troubleshooting" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Overview</h4>
+            <p>This week focused on the implementation phase of the AURaMP system, particularly the challenges faced during coding, the technologies used, and the process of troubleshooting issues. Ensuring smooth interaction between the frontend, backend, and machine learning layers presented several practical challenges.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-4">Programming Languages Used</h4>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h5 class="text-blue-400 font-bold mb-1">Python</h5>
+                    <p class="text-sm text-gray-400">Used for FastAPI backend development, data processing, and ML model implementation.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h5 class="text-yellow-400 font-bold mb-1">JavaScript</h5>
+                    <p class="text-sm text-gray-400">Powering the React frontend, interactive map visualization, and filtering logic.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h5 class="text-orange-400 font-bold mb-1">HTML & CSS</h5>
+                    <p class="text-sm text-gray-400">Structuring and styling components for a clean, user-friendly interface.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">APIs Used in the Project</h4>
+            <ul class="list-disc pl-5 space-y-3 text-gray-300">
+                <li><strong>FastAPI (Backend API):</strong> Built RESTful endpoints for fetching road segments (/blocks), generating ML predictions (/predict-ml), and ranking urgency (/priority-engine).</li>
+                <li><strong>Leaflet (Mapping Integration):</strong> Used for geographical visualization of accessibility risks.</li>
+                <li><strong>Internal ML API Calls:</strong> Seamlessly processes user-modified data from the scenario simulator to return real-time predictions.</li>
+            </ul>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">Dataset Description</h4>
+            <p>The dataset represents urban road segments with attributes like sidewalk width, slope percentage, curb ramps, traffic levels, and surface conditions. This structured data is used to train the ML model and simulate real-world conditions for predictive analysis.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">Challenges Faced During Coding</h4>
+            <p>Implementation challenges included handling complex API request/response cycles between frontend and backend, resolving data consistency issues during prediction, and managing real-time updates for the scenario simulator.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">Troubleshooting & Resolution</h4>
+            <div class="space-y-4">
+                <div class="border-l-4 border-red-500/50 pl-4 py-2">
+                    <h5 class="text-white font-semibold">Issue: Inconsistent Prediction Output</h5>
+                    <p class="text-sm text-gray-400">Caused by feature mismatch between training data and input data. Resolved by ensuring consistent feature encoding and order.</p>
+                </div>
+                <div class="border-l-4 border-blue-500/50 pl-4 py-2">
+                    <h5 class="text-white font-semibold">Issue: Scenario Simulator Real-time Lag</h5>
+                    <p class="text-sm text-gray-400">Caused by improper event handling. Resolved by fixing API request triggers on input change.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
+            <p>This week highlighted the practical challenges of building a full-stack, data-driven system. The troubleshooting process improved my problem-solving skills and reinforced the importance of systematic debugging. Overcoming these integration hurdles has made the system more stable and reliable.</p>
+        `
+    },
+    {
+        id: 6,
+        week: 6,
+        title: "Prototype Evaluation and Software Requirements Specification",
+        date: "Feb 27, 2026",
+        excerpt: "Evaluating the initial AURaMP prototype for usability and functionality, and documenting core software requirements and Agile methodology.",
+        content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week6-project.png" 
+                    alt="Prototype Evaluation and Requirements" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Prototype Evaluation</h4>
+            <p>This week focused on evaluating the initial prototype of the AURaMP system to assess its usability, functionality, and overall performance. While the prototype successfully demonstrated the core idea of accessibility risk prediction, it was important to analyze how effectively the system performs from a user’s perspective.</p>
+            
+            <h5 class="text-white font-semibold mt-4 mb-2">Evaluation Process</h5>
+            <p>The evaluation began with testing the prototype by simulating user interactions. The goal was to observe how easily a user can navigate the system, interpret the outputs, and interact with different features such as map visualization, risk filtering, and segment selection.</p>
+
+            <h5 class="text-white font-semibold mt-4 mb-2">User Testing and Feedback</h5>
+            <p>Basic user testing was conducted by interacting with the system as an end user. The evaluation focused on ease of navigation, clarity of risk levels, system responsiveness, and accuracy of displayed information. Key observations included:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
+                <li>The map-based visualization made it easy to understand accessibility conditions at a glance.</li>
+                <li>Risk classification into low, medium, and high categories improved interpretability.</li>
+                <li>Certain interactions such as filtering and switching between views required clearer feedback.</li>
+                <li>Some outputs needed better explanation to improve user understanding.</li>
+            </ul>
+
+            <h5 class="text-white font-semibold mt-4 mb-2">Identified Improvements</h5>
+            <p>Based on the evaluation, several improvements were identified: enhancing the clarity of UI elements, improving labeling and visual indicators, refining backend-frontend integration, and ensuring smoother interaction when modifying segments.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Use Case Diagram</h4>
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/USE CASE.png" 
+                    alt="Use Case Diagram" 
+                    class="w-full h-auto object-cover bg-white/5"
+                />
+            </div>
+            <p>The interaction between the ARiS system and the Urban Planner/User is depicted in the use case diagram. The user can view the dashboard and accessibility map, select road segments, and analyse risk, compliance, and AI-based explanations. Filtering segments and switching view mode (rule-based and ML-based) support better data exploration.</p>
+            <p>Key features include the Scenario Simulator for modifying segment attributes and comparing results, and the Priority Intervention Engine for ranking segments based on urgency. The system also includes a City Planning Dashboard (Budget Optimizer) for resource allocation. Additionally, users can predict accessibility risk for new areas, compare model outputs, and export PDF reports. The &lt;&lt;include&gt;&gt; relationships indicate dependencies between functions, ensuring a structured workflow.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Activity Diagram</h4>
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/activity.png" 
+                    alt="Activity Diagram" 
+                    class="w-full h-auto object-cover bg-white/5"
+                />
+            </div>
+            <p>The activity diagram represents the overall workflow of the ARiS System, beginning with loading road segment data and displaying the dashboard and accessibility map. The user then selects an analysis type such as Segment Analysis, Scenario Simulation, Priority Intervention engine, Budget optimization, or New Area Prediction. The system processes inputs based on the selection, performs ML prediction and compliance evaluation where required, and displays the results. Lastly, a PDF report export option is available to the user.</p>
+
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Software Requirements Specification</h4>
+            <p>This week also involved documenting the software requirements and research methodology in a structured manner to ensure alignment between development and project objectives.</p>
+
+            <div class="space-y-6 mt-4">
+                <div>
+                    <h5 class="text-white font-semibold mb-2">3.1 Software Methodology</h5>
+                    <p class="text-gray-300">The AURaMP system follows an Agile software development methodology. This iterative approach allows the system to be developed in stages with continuous testing and improvement across data processing, machine learning, and visualization modules.</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">3.2 Functional Requirements</h5>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-300">
+                        <li>Analyze urban infrastructure features (width, slope, lighting, etc.).</li>
+                        <li>Predict accessibility risk levels using machine learning.</li>
+                        <li>Display results through an interactive map interface.</li>
+                        <li>Support scenario simulation and priority ranking generation.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">3.3 User Requirements</h5>
+                    <p class="text-gray-300">The primary users are urban planners and researchers who require clear visualization of accessibility conditions, identification of high-risk segments, and support for decision-making through simulation features.</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-semibold mb-2">3.4 Test Plans</h5>
+                    <p class="text-gray-300">A structured testing approach including functional, integration, usability, and scenario-based testing was established to validate risk prediction, filtering, and priority ranking functionalities.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-6 border-b border-white/10 pb-2">4. Design Chapter</h4>
+            
+            <h5 class="text-white font-semibold mt-6 mb-3">4.1 Wireframes</h5>
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week6-wireframe.png" 
+                    alt="System Wireframes" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+            <p>The initial design of the AURaMP system was planned using wireframes to define the layout and user interface structure before development. The main elements included a system status header, a sidebar for filters and controls, a central map area for risk visualization, and a detail panel for segment information.</p>
+            <p>The wireframe design emphasized simplicity and usability, ensuring that users can easily navigate the system and interpret the results without requiring technical expertise.</p>
+
+            <h5 class="text-white font-semibold mt-8 mb-3">4.2 Prototypes</h5>
+            <p>Based on the wireframe design, an initial working prototype was developed using React and FastAPI. The prototype evolved through multiple stages:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h6 class="text-white font-bold mb-1">Initial Prototype</h6>
+                    <p class="text-sm text-gray-400">Basic map visualization and rule-based risk classification.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h6 class="text-white font-bold mb-1">Enhanced Prototype</h6>
+                    <p class="text-sm text-gray-400">Integration of ML-based predictions and improved UI structure.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h6 class="text-white font-bold mb-1">Refined Prototype</h6>
+                    <p class="text-sm text-gray-400">Advanced filtering, view switching, and smoother interactions.</p>
+                </div>
+            </div>
+
+            <h5 class="text-white font-semibold mt-8 mb-3">4.3 Prototype Evaluation</h5>
+            <p>The evaluation process involved testing system functionality and gathering feedback to identify areas for improvement. Key feedback points included:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
+                <li>Need for clearer interaction cues for filters and toggles.</li>
+                <li>Improvement in visual distinction between risk levels.</li>
+                <li>Better alignment between backend data and frontend representation.</li>
+            </ul>
+            <p class="mt-4 text-gray-300 italic">Based on this feedback, modifications were implemented to result in a more responsive, intuitive, and user-friendly interface.</p>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
+            <p>This week played a crucial role in strengthening both the technical and documentation aspects of the project. Evaluating the prototype helped identify practical usability issues, while documenting requirements provided a clearer understanding of system expectations. This phase has helped transition the project from initial development to a more refined and well-defined system.</p>
+        `
+    },
+    {
         id: 5,
         week: 5,
         title: "Software Methodology and Prototype Development",

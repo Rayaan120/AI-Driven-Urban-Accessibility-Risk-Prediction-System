@@ -68,6 +68,90 @@ const meetings = [
             'Conduct functional testing of the prototype.'
         ],
         status: 'Completed'
+    },
+    {
+        id: 6,
+        date: 'Feb 26, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Prototype Evaluation & Design Discussion',
+        summary: 'Presented the working prototype including map visualization and risk prediction. Discussed usability aspects, clarity of outputs, and initial user testing observations. Supervisor reviewed interface structure and suggested improving user interaction clarity.',
+        actionItems: [
+            'Refine UI elements for better usability.',
+            'Improve clarity of risk visualization and labels.',
+            'Document design structure (wireframes & prototype evolution).',
+            'Conduct further usability testing.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 7,
+        date: 'Mar 05, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'ML Model Enhancement & Advanced Features',
+        summary: 'Presented progress on ML improvements including prediction accuracy and feature handling. Discussed explainability (XAI) and priority intervention logic. Supervisor emphasized linking ML outputs to real-world usability.',
+        actionItems: [
+            'Improve model evaluation and consistency.',
+            'Strengthen explanation layer (feature importance clarity).',
+            'Finalize priority ranking logic.',
+            'Continue integrating ML outputs with UI.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 8,
+        date: 'Mar 12, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Implementation Challenges & System Integration',
+        summary: 'Discussed coding challenges including frontend-backend integration and data consistency. Explained API usage and dataset structure. Supervisor reviewed troubleshooting approaches and suggested clear documentation.',
+        actionItems: [
+            'Document troubleshooting cases in detail.',
+            'Improve API handling and error management.',
+            'Ensure consistent data flow across modules.',
+            'Refine system stability and debugging process.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 9,
+        date: 'Mar 19, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Software Testing & Validation',
+        summary: 'Presented testing approach including unit, integration, and system testing. Demonstrated interaction between frontend and backend. Supervisor emphasized importance of structured testing documentation and linking results to objectives.',
+        actionItems: [
+            'Finalize test cases and documentation.',
+            'Strengthen integration testing results.',
+            'Add testing comparison table in report.',
+            'Validate system outputs against objectives.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 10,
+        date: 'Mar 26, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Results, Evaluation & Final System Review',
+        summary: 'Presented final system outputs including risk prediction, scenario simulation, and priority ranking. Compared results with objectives and discussed limitations. Supervisor reviewed results and suggested strengthening the report discussion.',
+        actionItems: [
+            'Finalize results and evaluation section.',
+            'Clearly justify achievement of objectives.',
+            'Add limitations and comparison with existing work.',
+            'Refine report content for clarity.'
+        ],
+        status: 'Completed'
+    },
+    {
+        id: 11,
+        date: 'Apr 02, 2026',
+        supervisor: 'Dr. Roshan Renji',
+        agenda: 'Final Review, Report & Presentation Prep',
+        summary: 'Presented final version of the project, report progress, and presentation slides. Discussed future enhancements and project outcomes. Supervisor reviewed presentation flow and suggested focusing on clarity during viva.',
+        actionItems: [
+            'Complete final report formatting and submission.',
+            'Finalize presentation slides.',
+            'Practice explanation of system workflow and features.',
+            'Prepare for viva questions.'
+        ],
+        status: 'Completed'
     }
 ];
 
