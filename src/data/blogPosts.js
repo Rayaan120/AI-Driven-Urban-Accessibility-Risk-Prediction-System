@@ -785,6 +785,76 @@ export const blogPosts = [
         `
     },
     {
+        id: 7,
+        week: 7,
+        title: "Full-Stack Development and Machine Learning Model Implementation",
+        date: "Mar 05, 2026",
+        excerpt: "Establishing the core ARiS pipeline: FastAPI backend, React integration, and Random Forest model training for automated risk prediction.",
+        content: `
+            <h4 class="text-xl font-bold text-white mt-6 mb-3">Overview</h4>
+            <p>This week focused on implementing the core features of the ARiS system from both a full-stack development and machine learning perspective. The goal was to establish a complete working pipeline where data is processed, predictions are generated, and results are displayed through an interactive interface.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-4">Web Application Development (Full Stack)</h4>
+            
+            <h5 class="text-white font-semibold mt-4 mb-2">Backend Implementation</h5>
+            <p>The backend was developed using FastAPI to handle data processing and communication between the frontend and the machine learning model. Several API routes were implemented to support system functionality:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-300">
+                <li><code class="text-blue-400">/blocks</code> – Retrieves road segment data</li>
+                <li><code class="text-blue-400">/predict-ml</code> – Generates accessibility risk predictions</li>
+                <li><code class="text-blue-400">/priority-engine</code> – Computes urgency scores and ranks segments</li>
+            </ul>
+            <p class="mt-3">These endpoints enable smooth data flow between the frontend and backend.</p>
+
+            <h5 class="text-white font-semibold mt-6 mb-2">Frontend-Backend Integration</h5>
+            <p>The frontend, developed using React, was connected to the backend APIs. API calls were used to fetch road segment data, send input features for prediction, and display outputs such as risk levels, confidence scores, and rankings. This integration ensured end-to-end functionality of the system.</p>
+
+            <h5 class="text-white font-semibold mt-6 mb-2">Core Feature Implementation</h5>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h6 class="text-blue-400 font-bold mb-1 italic">Data Display</h6>
+                    <p class="text-sm text-gray-400">Road segments and risk levels are visualized on an interactive map.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h6 class="text-yellow-400 font-bold mb-1 italic">Data Update</h6>
+                    <p class="text-sm text-gray-400">Users can modify input attributes through the scenario simulator.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <h6 class="text-green-400 font-bold mb-1 italic">Data Processing</h6>
+                    <p class="text-sm text-gray-400">Updated inputs are sent to the backend for real-time prediction.</p>
+                </div>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-4">Machine Learning Model Implementation</h4>
+            
+            <h5 class="text-white font-semibold mt-4 mb-2">Dataset Handling</h5>
+            <p>The dataset was loaded using Pandas and structured to represent urban infrastructure features such as sidewalk width, slope, curb ramps, traffic levels, lighting conditions, and surface quality. Data preprocessing included handling missing values and encoding categorical features.</p>
+
+            <h5 class="text-white font-semibold mt-6 mb-2">Model Training & Evaluation</h5>
+            <p>A supervised machine learning model (Random Forest) was implemented for accessibility risk prediction. The process involved:</p>
+            <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-300">
+                <li>Splitting the dataset into training and testing sets</li>
+                <li>Training the model on labelled data</li>
+                <li>Evaluating performance using accuracy scores and confusion matrices</li>
+            </ul>
+
+            <h5 class="text-white font-semibold mt-6 mb-2">Model Saving and Integration</h5>
+            <p>The trained model was saved as a <code class="text-blue-400">.pkl</code> file and integrated into the backend. This allows the system to load the model during runtime and generate predictions dynamically for both existing and new inputs.</p>
+
+            <h4 class="text-xl font-bold text-white mt-8 mb-3">Deliverables</h4>
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 mb-6">
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center text-gray-400"><span class="text-green-400 mr-2">✔</span> Fully functional backend APIs for data retrieval and prediction</li>
+                    <li class="flex items-center text-gray-400"><span class="text-green-400 mr-2">✔</span> Interactive frontend connected to backend services</li>
+                    <li class="flex items-center text-gray-400"><span class="text-green-400 mr-2">✔</span> Working machine learning model integrated into the system</li>
+                    <li class="flex items-center text-gray-400"><span class="text-green-400 mr-2">✔</span> Python script for model training and evaluation</li>
+                </ul>
+            </div>
+
+            <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
+            <p>This week marked a significant step in transforming the project from a conceptual design into a working system. The integration of frontend, backend, and machine learning components demonstrated the feasibility of the proposed solution. Implementing the full pipeline provided valuable insights into system development and reinforced the importance of seamless integration.</p>
+        `
+    },
+    {
         id: 6,
         week: 6,
         title: "Prototype Evaluation and Software Requirements Specification",
