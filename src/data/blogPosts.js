@@ -580,7 +580,7 @@ export const blogPosts = [
                 />
             </div>
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Topic</h4>
-            <p>This week, I worked on clearly defining and refining my final-year project topic. The project is titled “AURaMP – AI-Driven Urban Accessibility Risk Mapping & Prediction System.” The focus of this project is to develop a smart, data-driven system that can analyze urban infrastructure and predict accessibility risks at a street or block level.</p>
+            <p>This week, I worked on clearly defining and refining my final-year project topic. The project is titled “ARiS – AI-Driven Urban Accessibility Risk Mapping & Prediction Intelligence System.” The focus of this project is to develop a smart, data-driven system that can analyze urban infrastructure and predict accessibility risks at a street or block level.</p>
             <p>The idea is to study common urban features such as sidewalk width, slope, curb ramps, lighting conditions, surface quality, and traffic levels, and use them to estimate how accessible a particular area is. Instead of looking at accessibility as a simple yes-or-no condition, the system will classify areas into different risk levels (low, medium, or high). This makes the results more practical and useful for prioritizing improvements.</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Aim of the Project</h4>
@@ -591,7 +591,7 @@ export const blogPosts = [
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Objectives of the Project</h4>
             <p>To achieve this aim, I have defined the following objectives:</p>
             <ul class="list-disc pl-5 mt-2 space-y-2 text-gray-300">
-                <li>Identify and select key urban features that influence accessibility, such as sidewalk width, slope, curb ramps, lighting, and surface conditions.</li>
+                <li>Identify and select key urban features that influence accessibility, such as sidewalk width, slope, curb ramps, traffic, lighting, and surface conditions.</li>
                 <li>Create a structured dataset representing street segments or blocks with these accessibility-related attributes.</li>
                 <li>Develop a rule-based accessibility scoring mechanism aligned with established accessibility guidelines, ensuring transparency and interpretability.</li>
                 <li>Implement a supervised machine learning model that can predict accessibility risk levels based on infrastructure data.</li>
@@ -620,7 +620,7 @@ export const blogPosts = [
                 />
             </div>
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Idea</h4>
-            <p>For my final-year project, I have chosen to work on a Smart Urban Accessibility Risk Mapping System. The core idea of this project is to use data and machine learning techniques to identify and predict accessibility risks in urban areas at a street or block level. The system focuses on challenges faced by elderly individuals and people with disabilities, such as narrow or damaged sidewalks, missing curb ramps, steep slopes, unsafe crossings, poor lighting, and uneven surface conditions. Instead of assessing accessibility only after issues are reported, this project aims to proactively highlight high-risk areas using a data-driven approach.</p>
+            <p>For my final-year project, I have chosen to work on a Smart Urban Accessibility Risk Mapping System. The core idea of this project is to use data and machine learning techniques to identify and predict accessibility risks in urban areas at a street or block level. The system focuses on challenges faced by elderly individuals and people with disabilities, such as narrow or damaged sidewalks, missing curb ramps, steep slopes, unsafe crossings, poor lighting, and uneven surface conditions. Instead of relying on reported issues, this project aims to proactively identify high-risk areas using a data-driven approach..</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Rationale for Choosing This Project</h4>
             <p>I chose this project because urban accessibility is a real-world, socially relevant problem, especially in a rapidly urbanizing country like India. While accessibility guidelines and policies exist, their implementation and monitoring are often manual, time-consuming, and reactive. Many people face accessibility barriers daily, but these issues are not always visible in planning processes until complaints arise. As a computer engineering student, I wanted to apply technical skills such as data analysis, machine learning, and software design to address a problem that has meaningful social impact. This project allows me to combine technology with inclusive design and contribute to smarter and more equitable urban planning solutions.</p>
