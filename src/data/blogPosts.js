@@ -709,7 +709,10 @@ export const blogPosts = [
             <div class="space-y-6 text-gray-300">
                 <div>
                     <h5 class="text-white font-semibold mb-2">FastAPI (Backend API)</h5>
-                    <p class="text-sm">Used to build RESTful endpoints that handle core system operations. Key APIs include:</p>
+                    <p class="text-sm mb-4">Used to build RESTful endpoints that handle core system operations. Key APIs include:</p>
+                    <div class="mb-4 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                        <img src="/code/2.png" alt="FastAPI Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
+                    </div>
                     <ul class="list-disc pl-5 mt-2 space-y-1 text-sm bg-white/5 p-3 rounded-lg border border-white/10">
                         <li><code class="text-blue-400">/blocks</code> – Retrieves structured road segment data</li>
                         <li><code class="text-blue-400">/predict-ml</code> – Generates machine learning-based risk predictions along with confidence scores</li>
@@ -720,12 +723,18 @@ export const blogPosts = [
 
                 <div>
                     <h5 class="text-white font-semibold mb-1">Leaflet (Mapping Integration)</h5>
-                    <p class="text-sm">Used to display road segments and accessibility risk levels on an interactive map interface, enabling geographic visualization and user interaction.</p>
+                    <p class="text-sm mb-4">Used to display road segments and accessibility risk levels on an interactive map interface, enabling geographic visualization and user interaction.</p>
+                    <div class="mb-4 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                        <img src="/code/1.png" alt="Leaflet Integration Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
+                    </div>
                 </div>
 
                 <div>
                     <h5 class="text-white font-semibold mb-1">Internal ML Processing</h5>
-                    <p class="text-sm">Handles preprocessing, feature encoding, and prediction using the trained machine learning model.</p>
+                    <p class="text-sm mb-4">Handles preprocessing, feature encoding, and prediction using the trained machine learning model.</p>
+                    <div class="mb-4 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                        <img src="/code/3.png" alt="ML Processing Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
+                    </div>
                 </div>
 
                 <div>
