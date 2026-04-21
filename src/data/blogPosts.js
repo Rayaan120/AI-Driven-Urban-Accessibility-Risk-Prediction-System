@@ -791,6 +791,14 @@ export const blogPosts = [
         date: "Mar 05, 2026",
         excerpt: "Establishing the core ARiS pipeline: FastAPI backend, React integration, and Random Forest model training for automated risk prediction.",
         content: `
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+                <img 
+                    src="/images/week7-project.png" 
+                    alt="Full-Stack and ML Implementation" 
+                    class="w-full h-auto object-cover"
+                />
+            </div>
+
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Overview</h4>
             <p>This week focused on implementing the core features of the ARiS system from both a full-stack development and machine learning perspective. The goal was to establish a complete working pipeline where data is processed, predictions are generated, and results are displayed through an interactive interface.</p>
 
