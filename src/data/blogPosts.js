@@ -627,7 +627,7 @@ export const blogPosts = [
 
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Details and Approach</h4>
-            <p>The project aims to analyze urban  data—such as sidewalk characteristics, road features, slope, traffic levels, lighting conditions, and surface conditions—using open data sources. These features will be processed and used to train a machine learning model that predicts an accessibility risk score for each street or block. The output will be visualized through a map-based interface that highlights low-, medium-, and high-risk areas, making the results easy to interpret and actionable.</p>
+            <p>The project aims to analyze urban data—such as sidewalk characteristics, road features, slope, traffic levels, lighting conditions, and surface conditions—using open data sources. These features will be processed and used to train a machine learning model that predicts an accessibility risk score for each street or block. The output will be visualized through a map-based interface that highlights low-, medium-, and high-risk areas, making the results easy to interpret and actionable.</p>
             <p>Rather than treating accessibility as a simple yes-or-no condition, this project models it as a risk spectrum, which can help prioritize areas that require urgent attention. The approach combines rule-based accessibility standards with supervised machine learning to ensure both interpretability and predictive capability.</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Initial Thoughts and Reflections</h4>
