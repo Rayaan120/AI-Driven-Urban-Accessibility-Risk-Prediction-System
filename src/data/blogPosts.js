@@ -80,7 +80,6 @@ export const blogPosts = [
                         <tr><td class="p-3 border border-white/10">Develop rule-based scoring system</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
                         <tr><td class="p-3 border border-white/10">Implement ML-based risk prediction</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
                         <tr><td class="p-3 border border-white/10">Build interactive map interface</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
-                        <tr><td class="p-3 border border-white/10">Enable decision support through prioritisation</td><td class="p-3 border border-white/10 text-green-400">Achieved</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -90,8 +89,12 @@ export const blogPosts = [
                 <li>Load dataset containing road segment features</li>
                 <li>Process input data and apply rule-based scoring</li>
                 <li>Generate ML predictions using trained Random Forest model</li>
-                <li>Display results on interactive map</li>
-                <li>Apply priority intervention engine for ranking and simulation</li>
+                <li>Compute confidence scores to assess prediction reliability</li>
+                <li>Generate feature importance explanations (XAI) for model interpretability</li>
+                <li>Display risk levels and results on the interactive map interface</li>
+                <li>Allow prediction for new or user-defined inputs</li>
+                <li>Enable scenario simulation by modifying input attributes in real time</li>
+                <li>Use the city planning dashboard (budget optimizer) to allocate resources and prioritise interventions under budget constraints</li>
             </ul>
 
             <h4 class="text-xl font-bold text-white mt-10 mb-4">2.2 Project Review</h4>
@@ -110,7 +113,11 @@ export const blogPosts = [
             <ul class="list-disc pl-5 space-y-2 text-gray-300">
                 <li>Developed a hybrid (rule-based + ML) risk prediction system</li>
                 <li>Built interactive map visualization for accessibility auditing</li>
-                <li>Enabled scenario-based decision analysis and prioritization</li>
+                <li>Integrated explainability (XAI) to interpret model predictions</li>
+                <li>Implemented a confidence and uncertainty layer to assess prediction reliability</li>
+                <li>Developed a priority intervention engine for ranking segments based on urgency</li>
+                <li>Enabled accessibility risk prediction for new or user-defined areas</li>
+                <li>Implemented a city planning dashboard with a budget optimizer for resource allocation</li>
                 <li>Proactive identification of high-risk areas for inclusive planning</li>
             </ul>
 
