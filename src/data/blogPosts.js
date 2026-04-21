@@ -797,7 +797,10 @@ export const blogPosts = [
             <h4 class="text-xl font-bold text-white mt-8 mb-4">Web Application Development (Full Stack)</h4>
             
             <h5 class="text-white font-semibold mt-4 mb-2">Backend Implementation</h5>
-            <p>The backend was developed using FastAPI to handle data processing and communication between the frontend and the machine learning model. Several API routes were implemented to support system functionality:</p>
+            <p class="mb-4">The backend was developed using FastAPI to handle data processing and communication between the frontend and the machine learning model. Several API routes were implemented to support system functionality:</p>
+            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/code/1.png" alt="Backend Implementation Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
+            </div>
             <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-300">
                 <li><code class="text-blue-400">/blocks</code> – Retrieves road segment data</li>
                 <li><code class="text-blue-400">/predict-ml</code> – Generates accessibility risk predictions</li>
@@ -806,7 +809,10 @@ export const blogPosts = [
             <p class="mt-3">These endpoints enable smooth data flow between the frontend and backend.</p>
 
             <h5 class="text-white font-semibold mt-6 mb-2">Frontend-Backend Integration</h5>
-            <p>The frontend, developed using React, was connected to the backend APIs. API calls were used to fetch road segment data, send input features for prediction, and display outputs such as risk levels, confidence scores, and rankings. This integration ensured end-to-end functionality of the system.</p>
+            <p class="mb-4">The frontend, developed using React, was connected to the backend APIs. API calls were used to fetch road segment data, send input features for prediction, and display outputs such as risk levels, confidence scores, and rankings. This integration ensured end-to-end functionality of the system.</p>
+            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/code/2.png" alt="Frontend Integration Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
+            </div>
 
             <h5 class="text-white font-semibold mt-6 mb-2">Core Feature Implementation</h5>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -827,7 +833,10 @@ export const blogPosts = [
             <h4 class="text-xl font-bold text-white mt-8 mb-4">Machine Learning Model Implementation</h4>
             
             <h5 class="text-white font-semibold mt-4 mb-2">Dataset Handling</h5>
-            <p>The dataset was loaded using Pandas and structured to represent urban infrastructure features such as sidewalk width, slope, curb ramps, traffic levels, lighting conditions, and surface quality. Data preprocessing included handling missing values and encoding categorical features.</p>
+            <p class="mb-4">The dataset was loaded using Pandas and structured to represent urban infrastructure features such as sidewalk width, slope, curb ramps, traffic levels, lighting conditions, and surface quality. Data preprocessing included handling missing values and encoding categorical features.</p>
+            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+                <img src="/code/3.png" alt="ML Implementation Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
+            </div>
 
             <h5 class="text-white font-semibold mt-6 mb-2">Model Training & Evaluation</h5>
             <p>A supervised machine learning model (Random Forest) was implemented for accessibility risk prediction. The process involved:</p>
