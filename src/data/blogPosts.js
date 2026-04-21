@@ -205,7 +205,7 @@ export const blogPosts = [
         date: "Mar 13, 2026",
         excerpt: "Exploring the AURaMP technical stack, API integrations, and systematic troubleshooting of full-stack implementation challenges.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-2xl mx-auto">
                 <img 
                     src="/images/week8-project.png" 
                     alt="Implementation and Troubleshooting" 
@@ -214,7 +214,7 @@ export const blogPosts = [
             </div>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Overview</h4>
-            <p>This week focused on the implementation phase of the AURaMP system, particularly the challenges faced during coding, the technologies used, and the process of troubleshooting issues. Ensuring smooth interaction between the frontend, backend, and machine learning layers presented several practical challenges.</p>
+            <p>This week focused on the implementation phase of the ARiS system, particularly the challenges faced during coding, the technologies used, and the process of troubleshooting issues. Ensuring smooth interaction between the frontend, backend, and machine learning layers presented several practical challenges.</p>
 
             <h4 class="text-xl font-bold text-white mt-8 mb-4">Programming Languages Used</h4>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -233,14 +233,55 @@ export const blogPosts = [
             </div>
 
             <h4 class="text-xl font-bold text-white mt-8 mb-3">APIs Used in the Project</h4>
-            <ul class="list-disc pl-5 space-y-3 text-gray-300">
-                <li><strong>FastAPI (Backend API):</strong> Built RESTful endpoints for fetching road segments (/blocks), generating ML predictions (/predict-ml), and ranking urgency (/priority-engine).</li>
-                <li><strong>Leaflet (Mapping Integration):</strong> Used for geographical visualization of accessibility risks.</li>
-                <li><strong>Internal ML API Calls:</strong> Seamlessly processes user-modified data from the scenario simulator to return real-time predictions.</li>
-            </ul>
+            <div class="space-y-6 text-gray-300">
+                <div>
+                    <h5 class="text-white font-semibold mb-2">FastAPI (Backend API)</h5>
+                    <p class="text-sm">Used to build RESTful endpoints that handle core system operations. Key APIs include:</p>
+                    <ul class="list-disc pl-5 mt-2 space-y-1 text-sm bg-white/5 p-3 rounded-lg border border-white/10">
+                        <li><code class="text-blue-400">/blocks</code> – Retrieves structured road segment data</li>
+                        <li><code class="text-blue-400">/predict-ml</code> – Generates machine learning-based risk predictions along with confidence scores</li>
+                        <li><code class="text-blue-400">/model/feature-importance</code> – Provides explainability by showing feature influence</li>
+                        <li><code class="text-blue-400">/priority-engine</code> – Computes urgency scores and ranks segments for intervention</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-semibold mb-1">Leaflet (Mapping Integration)</h5>
+                    <p class="text-sm">Used to display road segments and accessibility risk levels on an interactive map interface, enabling geographic visualization and user interaction.</p>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-semibold mb-1">Internal ML Processing</h5>
+                    <p class="text-sm">Handles preprocessing, feature encoding, and prediction using the trained machine learning model.</p>
+                </div>
+
+                <div>
+                    <h5 class="text-white font-semibold mb-1">Accessibility Risk Prediction for New Areas</h5>
+                    <p class="text-sm">Allows the system to generate risk predictions for new or user-defined inputs that are not already present in the dataset, demonstrating generalisation to unseen scenarios.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <h6 class="text-white font-bold mb-1 text-sm">Scenario Simulation</h6>
+                        <p class="text-xs text-gray-400">Processes user-modified infrastructure attributes and returns updated predictions and compliance results in real time.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <h6 class="text-white font-bold mb-1 text-sm">Confidence & Uncertainty Layer</h6>
+                        <p class="text-xs text-gray-400">Returns confidence scores alongside predictions, helping users assess output reliability.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <h6 class="text-white font-bold mb-1 text-sm">Priority Intervention Engine</h6>
+                        <p class="text-xs text-gray-400">Calculates urgency scores and ranks segments to support intervention planning.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                        <h6 class="text-white font-bold mb-1 text-sm">City Planning Dashboard (Budget Optimizer)</h6>
+                        <p class="text-xs text-gray-400">Supports budget-based planning by selecting high-impact segments within a limited budget.</p>
+                    </div>
+                </div>
+            </div>
 
             <h4 class="text-xl font-bold text-white mt-8 mb-3">Dataset Description</h4>
-            <p>The dataset represents urban road segments with attributes like sidewalk width, slope percentage, curb ramps, traffic levels, and surface conditions. This structured data is used to train the ML model and simulate real-world conditions for predictive analysis.</p>
+            <p>The dataset represents urban road segments with attributes like sidewalk width, slope percentage, curb ramps, traffic levels, lighting and surface conditions. This structured data is used to train the ML model and simulate real-world conditions for predictive analysis.</p>
 
             <h4 class="text-xl font-bold text-white mt-8 mb-3">Challenges Faced During Coding</h4>
             <p>Implementation challenges included handling complex API request/response cycles between frontend and backend, resolving data consistency issues during prediction, and managing real-time updates for the scenario simulator.</p>
