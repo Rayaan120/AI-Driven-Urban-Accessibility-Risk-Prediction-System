@@ -195,329 +195,470 @@ export const blogPosts = [
             </div>
 
             <h4 class="text-xl font-bold text-white mt-8 mb-4">4. Unit Testing</h4>
-            <p class="mb-6 text-gray-400">The following test cases document the verification of individual functional requirements, ensuring each module performs correctly under various conditions.</p>
+            <p class="mb-6 text-gray-400">The following test cases document the verification of individual functional requirements, ensuring each module performs correctly under various conditions. All tests follow the standard ARiS verification protocol.</p>
             
-            <div class="space-y-8 max-h-[1200px] overflow-y-auto pr-2 custom-scrollbar">
+            <div class="space-y-12 max-h-[1200px] overflow-y-auto pr-2 custom-scrollbar">
                 <!-- Test Case 1 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-01: Load Dashboard Successfully</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">System Initialization / Dashboard</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Backend server is running and frontend is connected.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Launch the application.<br/>2. Wait for dashboard to load.<br/>3. Observe map and sidebar.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Dashboard loads successfully with map, sidebar, and block data visible.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC001</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Load Dashboard Successfully</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">System Initialization / Dashboard</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Backend server is running and frontend is connected.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Launch the application.<br/>2. Wait for dashboard to load.<br/>3. Observe map and sidebar.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Valid backend connection and block dataset.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Dashboard loads successfully with map, sidebar, and block data visible.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Dashboard loaded successfully with all components visible.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 2 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-02: Display Road Segments on Map</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Map Visualization</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Block dataset is available from backend.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Open the application.<br/>2. Check map display.<br/>3. Verify that road segments appear on the map.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">All available segments are displayed as colored lines on the map.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC002</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Display Road Segments on Map</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Map Visualization</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Block dataset is available from backend.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Open the application.<br/>2. Check map display.<br/>3. Verify that road segments appear on the map.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Road segment dataset with coordinates.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">All available segments are displayed as colored lines on the map.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Segments were displayed correctly on the map.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 3 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-03: Select Segment from Map</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Map Interaction</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Map is loaded with visible segments.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Click on any road segment.<br/>2. Observe selected details in popup/sidebar.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Selected segment details are shown correctly.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC003</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Select Segment from Map</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Map Interaction</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Map is loaded with visible segments.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Click on any road segment.<br/>2. Observe selected details in popup/sidebar.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">One existing road segment.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border-b border-white/20 text-blue-300/80">Selected segment details are shown correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border-b border-white/20 text-gray-400">Segment details were displayed successfully.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 4 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-04: Rule-Based Risk Filtering</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Risk Filter</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Dashboard is loaded with multiple segments.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Switch to Rule-Based view.<br/>2. Select High Risk filter.<br/>3. Observe filtered map output.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Only high-risk rule-based segments are shown.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC004</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Rule-Based Risk Filtering</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Risk Filter</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Dashboard is loaded with multiple segments.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Switch to Rule-Based view.<br/>2. Select High Risk filter.<br/>3. Observe filtered map output.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segments with mixed risk levels.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Only high-risk rule-based segments are shown.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">High-risk rule-based segments were filtered correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 5 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-05: ML-Based Risk Filtering</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Risk Filter / ML View</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">ML predictions are available.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Switch to ML-Based view.<br/>2. Select Medium Risk filter.<br/>3. Observe filtered results.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Only medium-risk ML segments are displayed.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC005</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">ML-Based Risk Filtering</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Risk Filter / ML View</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">ML predictions are available.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Switch to ML-Based view.<br/>2. Select Medium Risk filter.<br/>3. Observe filtered results.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segments with ML risk predictions.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Only medium-risk ML segments are displayed.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">ML-based filtering worked correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 6 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-06: Compliance Filter for Non-Compliant Segments</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Compliance Filter</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Compliance scoring is enabled.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Enable Non-Compliant Only filter.<br/>2. Observe map and segment list.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Only non-compliant segments are displayed.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC006</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Compliance Filter for Non-Compliant Segments</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Compliance Filter</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Compliance scoring is enabled.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Enable Non-Compliant Only filter.<br/>2. Observe map and segment list.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segments with both compliant and non-compliant values.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Only non-compliant segments are displayed.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Only non-compliant segments were shown.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 7 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-07: ML Risk Prediction for Selected Segment</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">ML Prediction</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Backend ML model is loaded successfully.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Select a segment.<br/>2. Observe ML risk score and risk level.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">ML risk score, level, and related output are displayed.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC007</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">ML Risk Prediction for Selected Segment</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">ML Prediction</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Backend ML model is loaded successfully.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Select a segment.<br/>2. Observe ML risk score and risk level.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segment with valid feature values.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">ML risk score, level, and related output are displayed.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">ML risk prediction was shown correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 8 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-08: Confidence Score Display</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Uncertainty & Confidence Layer</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">ML prediction has been generated.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Select a segment.<br/>2. Check confidence value in sidebar/popup.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Confidence score is displayed as a percentage/value.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC008</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Confidence Score Display</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Uncertainty & Confidence Layer</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">ML prediction has been generated.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Select a segment.<br/>2. Check confidence value in sidebar/popup.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segment with ML prediction probabilities.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Confidence score is displayed as a percentage/value.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Confidence score appeared correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 9 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-09: XAI Explanation for Selected Segment</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Explainability Layer</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">SHAP explanation or feature explanation is enabled.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Select a segment.<br/>2. Check explanation panel.<br/>3. Verify risk drivers and protective factors.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Main contributing features are displayed clearly.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC009</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">XAI Explanation for Selected Segment</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Explainability Layer</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">SHAP explanation or feature explanation is enabled.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Select a segment.<br/>2. Check explanation panel.<br/>3. Verify risk drivers and protective factors.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segment with ML explanation output.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Main contributing features are displayed clearly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Explanation panel showed feature impacts correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 10 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-10: Scenario Simulator Updates Risk Output</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Scenario Simulator</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">A segment is selected for simulation.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Select a segment.<br/>2. Modify sidewalk width or lighting.<br/>3. Observe updated risk and compliance output.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Risk and compliance values update after modifications.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC010</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Scenario Simulator Updates Risk Output</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Scenario Simulator</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">A segment is selected for simulation.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Select a segment.<br/>2. Modify sidewalk width or lighting.<br/>3. Observe updated risk and compliance output.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Original segment + modified scenario values.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Risk and compliance values update after modifications.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Scenario updates reflected correctly in outputs.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 11 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-11: Reset Scenario to Original Data</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Scenario Simulator</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Scenario values have been modified.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Modify selected segment values.<br/>2. Click Reset to Actual Data.<br/>3. Observe restored values.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Segment values revert to original data.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC011</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Reset Scenario to Original Data</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Scenario Simulator</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Scenario values have been modified.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Modify selected segment values.<br/>2. Click Reset to Actual Data.<br/>3. Observe restored values.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Modified scenario block.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Segment values revert to original data.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Original values were restored successfully.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 12 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-12: Priority Engine Ranks Segments in Selected Ward</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Priority Intervention Engine</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Ward selection is available and blocks contain ward values.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Select a ward.<br/>2. Run Priority Engine.<br/>3. Observe ranked segment list.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Segments are ranked from highest to lowest priority.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC012</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Priority Engine Ranks Segments in Selected Ward</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Priority Intervention Engine</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Ward selection is available and blocks contain ward values.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Select a ward.<br/>2. Run Priority Engine.<br/>3. Observe ranked segment list.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segments belonging to one ward.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Segments are ranked from highest to lowest priority.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Priority ranking was generated correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 13 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-13: Click Ranked Segment and Navigate to Map Block</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Priority Intervention Engine / Map Interaction</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Priority results are displayed.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Run Priority Engine.<br/>2. Click any ranked segment.<br/>3. Observe map focus.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Map focuses on the selected segment/block.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC013</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Click Ranked Segment and Navigate to Map Block</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Priority Intervention Engine / Map Interaction</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Priority results are displayed.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Run Priority Engine.<br/>2. Click any ranked segment.<br/>3. Observe map focus.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Ranked segment entry linked to map block.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Map focuses on the selected segment/block.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Map navigated to the selected block successfully.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 14 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-14: Model Comparison Dashboard Loads Correctly</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Model Comparison Dashboard</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Both rule-based and ML outputs are available.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Open Model Comparison tab.<br/>2. Observe total blocks, agreement, disagreement, and matrix.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Comparison metrics and matrix are displayed correctly.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC014</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Model Comparison Dashboard Loads Correctly</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Model Comparison Dashboard</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Both rule-based and ML outputs are available.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Open Model Comparison tab.<br/>2. Observe total blocks, agreement, disagreement, and matrix.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Dataset with rule and ML outputs.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Comparison metrics and matrix are displayed correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Model comparison dashboard loaded correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 15 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-15: Export Scenario PDF Report</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">PDF Export</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">A segment is selected and scenario is active.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Select a segment.<br/>2. Modify scenario values.<br/>3. Click Export Before vs After PDF.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">PDF report is generated with before/after comparison.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC015</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Export Scenario PDF Report</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">PDF Export</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">A segment is selected and scenario is active.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Select a segment.<br/>2. Modify scenario values.<br/>3. Click Export Before vs After PDF.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Original block data and modified scenario data.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">PDF report is generated with before/after comparison.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">PDF was generated successfully with correct details.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 16 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-16: Switch Between Rule-Based and ML View</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">View Mode Toggle</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Dashboard is loaded with both rule-based and ML data.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Click on “Rule-Based” view.<br/>2. Observe map colors and data.<br/>3. Switch to “ML-Based” view.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Risk levels update dynamically based on selected mode.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC016</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Switch Between Rule-Based and ML View</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">View Mode Toggle</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Dashboard is loaded with both rule-based and ML data.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Click on “Rule-Based” view.<br/>2. Observe map colors and data.<br/>3. Switch to “ML-Based” view.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Segments with both rule and ML outputs.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Risk levels update dynamically based on selected mode.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">View switched correctly and values updated.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 17 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-17: Ward Selection Dropdown Functionality</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Priority Engine – Ward Selector</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Blocks contain ward values.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Open ward dropdown.<br/>2. Select different wards one by one.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Selected ward updates correctly and is ready for processing.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC017</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Ward Selection Dropdown Functionality</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Priority Engine – Ward Selector</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Blocks contain ward values.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Open ward dropdown.<br/>2. Select different wards one by one.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Multiple wards (Ward-1, Ward-2, Ward-3).</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Selected ward updates correctly and is ready for processing.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Ward selection worked correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 18 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-18: Handle Empty Ward Selection</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Priority Intervention Engine</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">No ward selected.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Do not select any ward.<br/>2. Click “Run Priority Engine”.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">System prevents execution and shows appropriate message or disables button.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC018</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Handle Empty Ward Selection</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Priority Intervention Engine</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">No ward selected.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Do not select any ward.<br/>2. Click “Run Priority Engine”.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">No ward selected.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">System prevents execution and shows appropriate message or disables button.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Button disabled / no execution occurred.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 19 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-19: Backend Failure Handling</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">API Integration</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">Backend is stopped or unreachable.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Stop backend server.<br/>2. Refresh application.<br/>3. Observe system behavior.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Error message shown (e.g., “Failed to reach backend”).</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC019</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Backend Failure Handling</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">API Integration</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">Backend is stopped or unreachable.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Stop backend server.<br/>2. Refresh application.<br/>3. Observe system behavior.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">No backend response.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Error message shown (e.g., “Failed to reach backend”).</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Error message displayed correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <!-- Test Case 20 -->
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/10">
+                    <table class="w-full text-left text-xs text-gray-300 border-collapse bg-white/5 rounded-lg overflow-hidden border border-white/20">
                         <thead>
-                            <tr><th colspan="2" class="p-3 border-b border-white/10 font-bold text-sm bg-blue-500/10 text-white">TC-20: Feature Importance Display</th></tr>
+                            <tr class="bg-white/10 text-white uppercase tracking-wider text-xs">
+                                <th class="p-3 border border-white/20 w-1/3">Field</th>
+                                <th class="p-3 border border-white/20">Details</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white w-1/4 bg-white/5">Module/Feature</td><td class="p-2 border-b border-white/10">Model Insights</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Preconditions</td><td class="p-2 border-b border-white/10">ML model with feature importance is loaded.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Test Steps</td><td class="p-2 border-b border-white/10">1. Open Model Insights tab.<br/>2. Observe feature importance bars.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Expected Result</td><td class="p-2 border-b border-white/10 text-blue-300/80">Features displayed with correct importance percentages.</td></tr>
-                            <tr><td class="p-2 border-b border-white/10 font-medium text-white bg-white/5">Status</td><td class="p-2 border-b border-white/10"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case ID</td><td class="p-3 border border-white/20">TC020</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Case Name</td><td class="p-3 border border-white/20">Feature Importance Display</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Module/Feature</td><td class="p-3 border border-white/20">Model Insights</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Preconditions</td><td class="p-3 border border-white/20 text-gray-400">ML model with feature importance is loaded.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Steps</td><td class="p-3 border border-white/20 text-gray-400">1. Open Model Insights tab.<br/>2. Observe feature importance bars.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Test Data</td><td class="p-3 border border-white/20 text-gray-400 italic">Feature importance values from backend.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Expected Result</td><td class="p-3 border border-white/20 text-blue-300/80">Features displayed with correct importance percentages.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Actual Result</td><td class="p-3 border border-white/20 text-gray-400">Feature importance visualized correctly.</td></tr>
+                            <tr><td class="p-3 border border-white/20 font-bold text-white bg-white/5">Status</td><td class="p-3 border border-white/20"><span class="px-2 py-0.5 rounded text-[10px] font-bold bg-green-500/20 text-green-400 border border-green-500/20">PASS</span></td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+
 
             <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
             <p>This week reinforced the importance of testing in building reliable systems. Performing integration testing was particularly valuable, as it ensured that the frontend, backend, and machine learning model work seamlessly together. Overall, this phase has greatly improved the robustness of the system.</p>
