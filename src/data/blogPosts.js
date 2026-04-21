@@ -15,7 +15,7 @@ export const blogPosts = [
             </div>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">2.1 Project Readiness</h4>
-            <p>This final week focused on assessing the readiness of the AURaMP system for real-world implementation. The system is now functionally complete, capable of predicting risk, evaluating compliance, and aiding decision-making through interactive map-based simulation.</p>
+            <p>This final week focused on assessing the readiness of the ARiS system for real-world implementation. The system is now functionally complete, capable of predicting risk, evaluating compliance, and aiding decision-making through interactive map-based simulation.</p>
 
             <h4 class="text-xl font-bold text-white mt-8 mb-4">Knowledge and Skills Gained</h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 text-sm">
@@ -45,7 +45,7 @@ export const blogPosts = [
             <p>Significant progress has been made in finalizing the project report and presentation. All chapters—from literature search to evaluation—are drafted, and the presentation slides are polished for an effective delivery of the problem, methodology, and results.</p>
 
             <h4 class="text-xl font-bold text-white mt-10 mb-3">Reflection</h4>
-            <p>Reviewing the entire journey, I am proud of how the AURaMP system transitioned from a conceptual idea to a working predictive tool. This project not only sharpened my technical abilities but also deepened my understanding of how data science can be applied to create more equitable and accessible urban environments.</p>
+            <p>Reviewing the entire journey, I am proud of how the ARiS system transitioned from a conceptual idea to a working predictive tool. This project not only sharpened my technical abilities but also deepened my understanding of how data science can be applied to create more equitable and accessible urban environments.</p>
         `
     },
     {
@@ -64,7 +64,7 @@ export const blogPosts = [
             </div>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">2.1 Project Progress</h4>
-            <p>This final week focused on testing, integration, and validation of the AURaMP system. All major components—including the frontend interface, backend API, and machine learning model—were tested together to ensure smooth operation. The system successfully generates accessibility risk predictions and displays them through an interactive map interface.</p>
+            <p>This final week focused on testing, integration, and validation of the ARiS system. All major components—including the frontend interface, backend API, and machine learning model—were tested together to ensure smooth operation. The system successfully generates accessibility risk predictions and displays them through an interactive map interface.</p>
 
             <h5 class="text-white font-semibold mt-6 mb-3">Project Outputs vs. Objectives</h5>
             <div class="overflow-x-auto mb-6">
