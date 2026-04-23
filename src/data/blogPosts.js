@@ -53,7 +53,7 @@ export const blogPosts = [
         week: 10,
         title: "Project Progress, Evaluation, and Final Review",
         date: "Mar 27, 2026",
-        excerpt: "Concluding the AURaMP journey: Summarizing key findings, system performance, and the impact of AI-driven urban accessibility mapping.",
+        excerpt: "Concluding the ARiS journey: Summarizing key findings, system performance, and the impact of AI-driven urban accessibility mapping.",
         content: `
             <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <img 
@@ -130,7 +130,7 @@ export const blogPosts = [
         week: 9,
         title: "Software Testing: Concepts, Types, and Implementation",
         date: "Mar 20, 2026",
-        excerpt: "Applying rigorous software testing principles—from unit to integration testing—to ensure the reliability and accuracy of the AURaMP system.",
+        excerpt: "Applying rigorous software testing principles—from unit to integration testing—to ensure the reliability and accuracy of the ARiS system.",
         content: `
             <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <img 
@@ -676,7 +676,7 @@ export const blogPosts = [
         week: 8,
         title: "Implementation Challenges, Technologies, APIs, and Troubleshooting",
         date: "Mar 13, 2026",
-        excerpt: "Exploring the AURaMP technical stack, API integrations, and systematic troubleshooting of full-stack implementation challenges.",
+        excerpt: "Exploring the ARiS technical stack, API integrations, and systematic troubleshooting of full-stack implementation challenges.",
         content: `
             <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-2xl mx-auto">
                 <img 
@@ -791,7 +791,7 @@ export const blogPosts = [
         date: "Mar 05, 2026",
         excerpt: "Establishing the core ARiS pipeline: FastAPI backend, React integration, and Random Forest model training for automated risk prediction.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week7-project.png" 
                     alt="Full-Stack and ML Implementation" 
@@ -806,7 +806,7 @@ export const blogPosts = [
             
             <h5 class="text-white font-semibold mt-4 mb-2">Backend Implementation</h5>
             <p class="mb-4">The backend was developed using FastAPI to handle data processing and communication between the frontend and the machine learning model. Several API routes were implemented to support system functionality:</p>
-            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg max-w-xl mx-auto">
                 <img src="/code/1.png" alt="Backend Implementation Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
             <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-300">
@@ -818,7 +818,7 @@ export const blogPosts = [
 
             <h5 class="text-white font-semibold mt-6 mb-2">Frontend-Backend Integration</h5>
             <p class="mb-4">The frontend, developed using React, was connected to the backend APIs. API calls were used to fetch road segment data, send input features for prediction, and display outputs such as risk levels, confidence scores, and rankings. This integration ensured end-to-end functionality of the system.</p>
-            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg max-w-xl mx-auto">
                 <img src="/code/2.png" alt="Frontend Integration Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
 
@@ -842,7 +842,7 @@ export const blogPosts = [
             
             <h5 class="text-white font-semibold mt-4 mb-2">Dataset Handling</h5>
             <p class="mb-4">The dataset was loaded using Pandas and structured to represent urban infrastructure features such as sidewalk width, slope, curb ramps, traffic levels, lighting conditions, and surface quality. Data preprocessing included handling missing values and encoding categorical features.</p>
-            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg">
+            <div class="mb-6 rounded-xl overflow-hidden border border-white/10 shadow-lg max-w-xl mx-auto">
                 <img src="/code/3.png" alt="ML Implementation Code" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
 
@@ -876,9 +876,9 @@ export const blogPosts = [
         week: 6,
         title: "Prototype Evaluation and Software Requirements Specification",
         date: "Feb 27, 2026",
-        excerpt: "Evaluating the initial AURaMP prototype for usability and functionality, and documenting core software requirements and Agile methodology.",
+        excerpt: "Evaluating the initial ARiS prototype for usability and functionality, and documenting core software requirements and Agile methodology.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-2xl mx-auto">
                 <img 
                     src="/images/week6-project.png" 
                     alt="Prototype Evaluation and Requirements" 
@@ -905,7 +905,7 @@ export const blogPosts = [
             <p>Based on the evaluation, several improvements were identified: enhancing the clarity of UI elements, improving labeling and visual indicators, refining backend-frontend integration, and ensuring smoother interaction when modifying segments.</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Use Case Diagram</h4>
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-sm mx-auto">
                 <img 
                     src="/images/USE CASE.png" 
                     alt="Use Case Diagram" 
@@ -916,7 +916,7 @@ export const blogPosts = [
             <p>Key features include the Scenario Simulator for modifying segment attributes and comparing results, and the Priority Intervention Engine for ranking segments based on urgency. The system also includes a City Planning Dashboard (Budget Optimizer) for resource allocation. Additionally, users can predict accessibility risk for new areas, compare model outputs, and export PDF reports. The &lt;&lt;include&gt;&gt; relationships indicate dependencies between functions, ensuring a structured workflow.</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Activity Diagram</h4>
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/activity.png" 
                     alt="Activity Diagram" 
@@ -955,7 +955,7 @@ export const blogPosts = [
             <h4 class="text-xl font-bold text-white mt-10 mb-6 border-b border-white/10 pb-2">4. Design Chapter</h4>
             
             <h5 class="text-white font-semibold mt-6 mb-3">4.1 Wireframes</h5>
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week6-wireframe.png" 
                     alt="System Wireframes" 
@@ -1000,9 +1000,9 @@ export const blogPosts = [
         week: 5,
         title: "Software Methodology and Prototype Development",
         date: "Feb 20, 2026",
-        excerpt: "Analyzing development frameworks and building the initial functional prototype for the AURaMP system.",
+        excerpt: "Analyzing development frameworks and building the initial functional prototype for the ARiS system.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week5-project.jpg" 
                     alt="Software Methodology and Prototype" 
@@ -1047,14 +1047,14 @@ export const blogPosts = [
         week: 4,
         title: "Project Planning, Gantt Chart, WBS, Software Methodology, and Research Methodology",
         date: "Feb 13, 2026",
-        excerpt: "Defining the structural roadmap: Work Breakdown Structure, Gantt charts, and iterative development methodologies for AURaMP.",
+        excerpt: "Defining the structural roadmap: Work Breakdown Structure, Gantt charts, and iterative development methodologies for ARiS.",
         content: `
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Project Planning Overview</h4>
             <p>This week focused on planning the structure and timeline of the project in order to ensure systematic development and timely completion. While the project idea, objectives, and research background were already defined in previous weeks, it was important to translate these ideas into a clear execution plan. Effective planning helps break down the overall system into manageable components and provides a roadmap for development, experimentation, and evaluation.</p>
             <p>The project, titled “ARiS – AI-Driven Urban Accessibility Risk Mapping & Prediction System,” involves several interconnected components including data preparation, machine learning modeling, web application development, and visualization. To organize these tasks efficiently, I developed a Work Breakdown Structure (WBS) and a Gantt chart. These tools help identify the sequence of activities, dependencies between tasks, and expected timelines for each phase of the project.</p>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Work Breakdown Structure (WBS)</h4>
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/WBS.jpg" 
                     alt="Work Breakdown Structure" 
@@ -1063,7 +1063,7 @@ export const blogPosts = [
             </div>
 
             <h4 class="text-xl font-bold text-white mt-6 mb-3">Gantt Chart (Project Timeline)</h4>
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week4-project.jpg" 
                     alt="Project Gantt Chart" 
@@ -1093,9 +1093,9 @@ export const blogPosts = [
         week: 3,
         title: "Literature Review, Research Gap, Research Questions, and Reflections",
         date: "Feb 06, 2026",
-        excerpt: "Understanding existing research frameworks, identifying gaps, and framing questions for the AURaMP predictive accessibility model.",
+        excerpt: "Understanding existing research frameworks, identifying gaps, and framing questions for the ARiS predictive accessibility model.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week3-project.jpg" 
                     alt="Literature Review and Research Gap" 
@@ -1139,9 +1139,9 @@ export const blogPosts = [
         week: 2,
         title: "Project Topic, Aim, and Objectives",
         date: "Jan 30, 2026",
-        excerpt: "Refining the final-year project topic: AURaMP - AI-Driven Urban Accessibility Risk Mapping & Prediction System.",
+        excerpt: "Refining the final-year project topic: ARiS - AI-Driven Urban Accessibility Risk Mapping & Prediction Intelligence System.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week2-project.jpg" 
                     alt="AURaMP Project Objectives" 
@@ -1181,7 +1181,7 @@ export const blogPosts = [
         date: "Jan 23, 2026",
         excerpt: "Introduction to Smart Urban Accessibility Risk Mapping System: Using ML to predict accessibility risks for inclusive urban planning.",
         content: `
-            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mb-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl max-w-xl mx-auto">
                 <img 
                     src="/images/week1-project.jpg" 
                     alt="Smart Urban Accessibility Mapping" 
