@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { blogPosts } from '../data/blogPosts';
 import { ArrowLeft, Calendar, Clock } from 'lucide-react';
 
 const Blog = () => {
     const [selectedPost, setSelectedPost] = useState(null);
+
+    useEffect(() => {
+        if (selectedPost) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, [selectedPost]);
 
     // Detail View
     if (selectedPost) {

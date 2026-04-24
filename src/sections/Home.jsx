@@ -14,11 +14,10 @@ const Home = ({ setActiveTab }) => {
                     Live Project
                 </div>
                 <h1 className="text-4xl md:text-6xl font-display font-bold bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent max-w-4xl mx-auto leading-tight">
-                    Smart Urban Accessibility <br /> Risk Mapping System
+                    ARiS <br />
                 </h1>
                 <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                    AI-driven spatial analysis for safer, more inclusive cities.
-                    Predicting infrastructure risks before they become barriers.
+                    AI-Driven Urban Accessibility Risk Mapping and Prediction Intelligence System
                 </p>
                 <div className="flex justify-center gap-4 pt-4">
                     <button
@@ -82,7 +81,7 @@ const Home = ({ setActiveTab }) => {
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     {[
-                        { icon: Database, title: "Data Ingestion", desc: "Aggregating open street map data, elevation profiles, and traffic reports." },
+                        { icon: Database, title: "Data Ingestion", desc: "Aggregating structured road segment data including width, slope, curb ramp, traffic, lighting, and surface conditions." },
                         { icon: Brain, title: "ML Analysis", desc: "Processing features like slope, surface quality, and lighting through the risk model." },
                         { icon: Map, title: "Risk Scoring", desc: "Assigning a granular risk index (0-100) to every street segment." },
                         { icon: Globe, title: "Visualization", desc: "Displaying high-risk zones on a public-facing interactive web map." }
@@ -130,40 +129,7 @@ const Home = ({ setActiveTab }) => {
                 </div>
             </div>
 
-            {/* 5. Development Timeline */}
-            <div className="space-y-8">
-                <h2 className="text-3xl font-display font-bold text-center">Development Roadmap</h2>
-                <div className="relative border-l border-white/10 ml-4 md:ml-0 md:mx-auto max-w-3xl space-y-8">
-                    {[
-                        { phase: "Phase 1: Research", date: "Jan - Feb", status: "completed", desc: "Problem definition, literature review, and data source identification." },
-                        { phase: "Phase 2: Prototype", date: "Mar - Apr", status: "current", desc: "Building the core ML model and initial frontend dashboard structure." },
-                        { phase: "Phase 3: Integration", date: "May - Jun", status: "planned", desc: "Connecting the ML inference engine with the live map visualization." },
-                        { phase: "Phase 4: Testing", date: "July", status: "planned", desc: "User testing with city planners and accessibility advocates." }
-                    ].map((item, idx) => (
-                        <div key={idx} className="relative pl-8 md:pl-0">
-                            {/* Dot on timeline */}
-                            <div className={`
-                                absolute top-1.5 left-[-5px] w-3 h-3 rounded-full border-2 
-                                ${item.status === 'completed' ? 'bg-primary border-primary' : item.status === 'current' ? 'bg-black border-primary animate-pulse' : 'bg-black border-gray-600'}
-                            `}></div>
 
-                            <div className="md:grid md:grid-cols-4 md:gap-8">
-                                <div className="md:col-span-1 mb-1 md:mb-0">
-                                    <span className={`text-sm font-mono ${item.status === 'current' ? 'text-primary' : 'text-gray-500'}`}>
-                                        {item.date}
-                                    </span>
-                                </div>
-                                <div className="md:col-span-3">
-                                    <h4 className={`text-lg font-bold mb-1 ${item.status === 'completed' || item.status === 'current' ? 'text-white' : 'text-gray-500'}`}>
-                                        {item.phase}
-                                    </h4>
-                                    <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
 
             {/* Quick Links Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

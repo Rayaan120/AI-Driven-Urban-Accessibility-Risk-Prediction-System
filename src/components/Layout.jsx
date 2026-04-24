@@ -9,10 +9,10 @@ const Layout = ({ children, activeTab, setActiveTab }) => {
                 <header className="mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
                     <div>
                         <h1 className="text-4xl md:text-5xl font-display font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                            Academic Portfolio
+                            ARiS
                         </h1>
                         <p className="mt-2 text-gray-400 font-light text-lg">
-                            Research & Development Journal
+                            Accessibility Risk Intelligence System
                         </p>
                     </div>
                     <Navigation activeTab={activeTab} setActiveTab={setActiveTab} />
