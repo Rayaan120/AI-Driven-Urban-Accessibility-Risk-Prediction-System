@@ -6,6 +6,7 @@ import Blog from './sections/Blog';
 import MeetingLog from './sections/MeetingLog';
 import Gallery from './sections/Gallery';
 import Contact from './sections/Contact';
+import Documentation from './sections/Documentation';
 
 function App() {
   const [activeTab, setActiveTab] = useState('home');
@@ -17,6 +18,7 @@ function App() {
       case 'blog': return <Blog />;
       case 'meeting-log': return <MeetingLog />;
       case 'gallery': return <Gallery />;
+      case 'documentation': return <Documentation />;
       case 'contact': return <Contact />;
       default: return <About />;
     }

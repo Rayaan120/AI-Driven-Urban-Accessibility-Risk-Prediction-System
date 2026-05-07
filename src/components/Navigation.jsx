@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User, BookOpen, ClipboardList, Image, Mail, Home } from 'lucide-react';
+import { User, BookOpen, ClipboardList, Image, Mail, Home, FileText } from 'lucide-react';
 
 const tabs = [
     { id: 'home', label: 'Home', icon: Home },
@@ -8,6 +8,7 @@ const tabs = [
     { id: 'blog', label: 'Journal', icon: BookOpen },
     { id: 'meeting-log', label: 'Log', icon: ClipboardList },
     { id: 'gallery', label: 'Gallery', icon: Image },
+    { id: 'documentation', label: 'Docs', icon: FileText },
     { id: 'contact', label: 'Contact', icon: Mail },
 ];
 

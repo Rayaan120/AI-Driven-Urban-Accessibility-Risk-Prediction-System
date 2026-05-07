@@ -21,7 +21,7 @@ const Home = ({ setActiveTab }) => {
                 </p>
                 <div className="flex justify-center gap-4 pt-4">
                     <button
-                        onClick={() => setActiveTab('about')}
+                        onClick={() => setActiveTab('documentation')}
                         className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full font-medium transition-all hover:scale-105 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
                     >
                         Read the Paper
